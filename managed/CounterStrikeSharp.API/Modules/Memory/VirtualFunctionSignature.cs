@@ -37,8 +37,9 @@ public partial class VirtualFunction
                     argumentTypes.Count(), (int)returnType, arguments);
                 _createdFunctions[signature] = function;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e);
             }
         }
 
@@ -57,8 +58,9 @@ public partial class VirtualFunction
                     argumentTypes.Count(), (int)returnType, arguments);
                 _createdFunctions[signature] = function;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e);
             }
         }
 

@@ -20,8 +20,9 @@ public abstract class BaseMemoryFunction : NativeObject
                     argumentTypes.Length, (int)returnType, argumentTypes.Cast<object>().ToArray());
                 _createdFunctions[signature] = function;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e);
             }
         }
 
@@ -39,8 +40,9 @@ public abstract class BaseMemoryFunction : NativeObject
                     argumentTypes.Length, (int)returnType, argumentTypes.Cast<object>().ToArray());
                 _createdFunctions[signature] = function;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e);
             }
         }
 
